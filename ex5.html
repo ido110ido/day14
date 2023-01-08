@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="myInput">Enter some text:</label><br>
+        <input type="text" id="myInput"><br>
+        <input type="button" id="submit" value="Submit">
+      </form> 
+    <button id="hello">Hello</button>
+    <button id="goodbye">Goodbye</button>
+    <div class="container">
+        <h1>Todo List</h1>
+        <!-- event handler function -->
+        <form onsubmit="addTodo(event)">
+          <div>
+            <input id="input_todo" />
+            <div>
+              <button type="submit">Add Todo</button>
+            </div>
+          </div>
+        </form>
+        <ul id="todo-list" class="list-group"></ul>
+        <div>Good Luck!</div>
+      </div>
+    <script src="/main.js"></script>
+</body>
+</html>
