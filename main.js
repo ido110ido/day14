@@ -100,8 +100,15 @@ function addTodo(e) {
         const newTodo = document.createElement("li");
         newTodo.innerText = input_todo.value;
         todoListEl.appendChild(newTodo);
+        newTodo.style.cursor ='pointer'
         newTodo.addEventListener("click", () => {
-          todoListEl.removeChild(newTodo);
+            if(newTodo.style.textDecoration === 'line-through'){
+                newTodo.style.textDecoration = '' 
+            }
+            else{
+                newTodo.style.textDecoration = 'line-through';
+            }
+
         });
         todoListEl.appendChild(newTodo);
         input_todo.value = "";    
